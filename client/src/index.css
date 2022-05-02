@@ -1,19 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap'); */
 
 :root {
-  --primary: #b7b0d2;
+  /* --primary: white; */
+  --primary: #e5f2ee;
+  /* --secondary: white; */
   --secondary: #e5f2ee;
-  --tertiary: #478297;
+  /* --tertiary: #478297; */
+  --tertiary: black;
   --light: #fafafa;
   --dark: #351F39;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Slackey', cursive;
+  font-family: 'Poppins';
 }
 
 body, html {
@@ -27,8 +32,8 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
-  color: #F3A847;
-  background-color: #EADFB1;
+  color: #626161;;
+  background-color:#FFFFFF;
 }
 
 h1,
@@ -84,11 +89,21 @@ a:hover {
 
 header {
   background: var(--primary);
+  display: flex;
+  justify-content: space-between;
 }
 
 header a {
-  color: var(--light);
+  color: black;
 }
+
+header nav ul li {
+  overflow: auto;
+  margin: 5px;
+  text-decoration: none;
+  
+}
+
 
 button {
   align-self:baseline;
@@ -101,6 +116,7 @@ button {
   cursor: pointer;
   margin: 0 1px;
   background-color: var(--secondary);
+  box-shadow: var(--box-shadow);
 }
 
 button:hover {
@@ -121,17 +137,40 @@ button[disabled] {
 
 img {
   max-width: 75%;
+} 
+
+.hp-logo{
+  height: 65px;
 }
+
 .detail-img{
   width:  300px;
   height: 300px;
+  box-shadow: var(--box-shadow);
+}
+
+.product-list {
+  margin: 10px;
+}
+
+.product-list img{
+ width: 200px;
+ height: 200px;
+ margin-top: 10px;
+ box-shadow: var(--box-shadow);
 }
 
 .products {
-  border: 1px solid #ddd; /* Gray border */
+  /* border: 1px solid #ddd; Gray border */
   border-radius: 4px;  /* Rounded border */
   padding: 5px; /* Some padding */
   width: 150px; /* Set a small width */
+}
+
+.products img {
+  width: 30%;
+  height: 30%;
+  box-shadow: var(--box-shadow);
 }
 
 /* Add a hover effect (blue shadow) */
@@ -164,7 +203,7 @@ input:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #EADFB1;
+  background-color:#FFFFFF;
 }
 .product-container{
   text-align:center;
@@ -267,6 +306,7 @@ input:focus {
 .card {
   width: 25%;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .error-text {
