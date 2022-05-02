@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
 :root {
-  --primary: #726A95;
-  --secondary: #A0C1B8;
-  --tertiary: #719FB0;
+  --primary: #b7b0d2;
+  --secondary: #e5f2ee;
+  --tertiary: #478297;
   --light: #fafafa;
   --dark: #351F39;
   --error: rgb(228, 46, 1);
@@ -158,7 +158,7 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 .25rem rgba(237, 230, 230, 0.5);
 }
 .homeContainer {
   background-position: center;

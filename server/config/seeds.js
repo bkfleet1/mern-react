@@ -17,6 +17,14 @@ db.once("open", async () => {
   await Product.deleteMany();
 
   const products = await Product.insertMany([
+      {
+      name: "Classic White Calla Lily",
+      description: "This houseplant is great for making every day bright.",
+      image: "lilys.png",
+      category: categories[1]._id,
+      price: 15.99,
+      quantity: 1,
+    },
     {
       name: "Gardenia",
       description: "EverGreen flowering product.",
@@ -26,11 +34,19 @@ db.once("open", async () => {
       quantity: 1,
     },
     {
+      name: "Dragon Tree",
+      description: "Tall, elegant houseplant specimens .",
+      image: "madascar.jpg",
+      category: categories[3]._id,
+      price: 35.00,
+      quantity: 1,
+    },
+    {
       name: "Orchid",
       description: "Fragant and colourful.",
       image: "orchid.jpg",
       category: categories[2]._id,
-      price: 19.99,
+      price: 16.00,
       quantity: 1,
     },
     {
@@ -38,7 +54,7 @@ db.once("open", async () => {
       category: categories[3]._id,
       description: "Secculent low watering.",
       image: "aloe-vera.jpg",
-      price: 25.0,
+      price: 25.00,
       quantity: 2,
     },
     {
@@ -46,7 +62,7 @@ db.once("open", async () => {
       category: categories[0]._id,
       description: "The flower of love.",
       image: "rose.jpg",
-      price: 29.99,
+      price: 45.00,
       quantity: 5,
     },
 
@@ -55,15 +71,15 @@ db.once("open", async () => {
       category: categories[1]._id,
       description: "fig tree  and low light .",
       image: "fig.jpg",
-      price: 50.99,
+      price: 30.00,
       quantity: 7,
     },
     {
       name: "Jasmin",
-      category: categories[0]._id,
+      category: categories[1]._id,
       description: "Aromatic and beautiful .",
       image: "jasmin.jpg",
-      price: 50.99,
+      price: 50.00,
       quantity: 7,
     },
   ]);
