@@ -40,7 +40,7 @@ function CategoryMenu() {
 
   return (
     <div className="cat-page">
-      <h2 id = "cat-head">Choose a Category:</h2>
+      <h2 id = "cat-head">plant categories</h2>
       <div className="category">
       {categories.map(item => (
         <button

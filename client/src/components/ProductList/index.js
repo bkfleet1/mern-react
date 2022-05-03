@@ -7,13 +7,14 @@ import { QUERY_PRODUCTS } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
 
+
+
 function ProductList() {
+  
   const [state, dispatch] = useStoreContext();
-
   const { currentCategory } = state;
-
   const { loading, data } = useQuery(QUERY_PRODUCTS);
-
+ 
   useEffect(() => {
     if(data) {
       dispatch({
@@ -43,10 +44,10 @@ function ProductList() {
 
   return (
     <div style={{
-      width: '100vw',
-      height: '100vh'}} 
+      width: '95vw',
+      height: '95vh'}} 
       className="product-list">
-      <h2>Plants:</h2>
+      {/* <h2>Plants:</h2> */}
       {state.products.length ? (
         <div className="flex-row">
             {filterProducts().map(product => (

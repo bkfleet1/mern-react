@@ -1,14 +1,31 @@
+:root {
+  /* --primary: white; */
+  --primary: #e5f2ee;
+  /* --secondary: white; */
+  --secondary: #e5f2ee;
+  /* --tertiary: #478297; */
+  --tertiary: black;
+  --light: #fafafa;
+  --dark: #351F39;
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 .cart {
   position: fixed;
-  top: 0;
+  top: 10%;
   right: 0;
   min-width: 20%;
   max-width: 30%;
   max-height: 60%;
-  background-color: lightgreen;
+  background-color: white;
   overflow: auto;
   padding: .5rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+  /* box-shadow: 0 0 1rem rgba(0, 0, 0, .5); */
+  box-shadow: var(--box-shadow);
   border-bottom-left-radius: .5rem;
 }
 
@@ -24,24 +41,26 @@
   top: .5rem;
   right: .5rem;
   cursor: pointer;
-  color: pale green;
+  color: pale white;
+  box-shadow: var(--box-shadow);
 }
 
-.cart .close:hover {
+/* .cart .close:hover {
   text-decoration: underline;
-}
+} */
 
 .cart-closed {
   position: fixed;
-  top: 2%;
+  top: 7%;
   right: 1%;
   font-size: 2rem;
   cursor: pointer;
-  background-color: lightgreen;
+  background-color: white;
   border-radius: 50%;
   padding: .25rem;
   width: 50px;
   height: 50px;
+  box-shadow: var(--box-shadow);
 }
 
 .cart-closed:hover {
