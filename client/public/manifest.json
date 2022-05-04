@@ -1,6 +1,7 @@
 {
-  "short_name": "houseplant heaven",
-  "name": "Order responsibly raised, healthy house plants for your home or a gift for someone you care about. 24-hour delivery guarenteed!",
+  "short_name": "House Plant Heaven",
+  "name": "House Plant Heaven",
+  "description": "Order responsibly raised, healthy house plants for your home or a gift for someone you care about. 24-hour delivery guarenteed!",
   "icons": [
     {
       "src": "favicon.png",
