@@ -25,6 +25,24 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
+   stAddress: {
+    type: String,
+    trim: true
+  },
+   city: {
+    type: String,
+    trim: true
+  },
+   zipCode: {
+    type: String
+   
+  
+  },
+   password: {
+    type: String,
+   trim: true
+   
+  },
   orders: [Order.schema]
 });
 
